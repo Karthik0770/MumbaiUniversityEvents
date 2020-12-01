@@ -1,0 +1,110 @@
+body {
+  background-image: url("back.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.img-jumbo {
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('bigconfetti.gif');
+  background-size: cover;
+  width: 
+}
+#SearchBar{
+}
+h1{
+  color: white;
+  font-weight: 500;
+  font-size: 3vw;
+}
+
+.topnav input[type=text] {
+    border: 1px solid #ccc;
+}
+
+#search_texts{
+  color: white;
+}
+#Header{
+  color: white;
+  font-weight: 500;
+  font-size: 4.5vw;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+
+}
+#HomeTitle{
+  color: black;
+  font-family: Impact, fantasy;
+}
+#footballCard{
+  width: 250px;
+  height: 550px;
+}
+#caro{
+  margin-top: 2vw;
+}
+#carim{
+  height: 600px;
+}
+h2{
+  font-family: font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 5vw;
+  outline: 3px;
+  outline-color: yellow;
+}
+#footy{
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('sport.jpg')no-repeat ; 
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: 100% auto;
+    position: relative;
+   min-height: 20vw;
+}
+#cricky{
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('cricket.jpg')no-repeat ; 
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: 100% auto;
+    position: relative;
+   min-height: 20vw;
+}
+#musicy{
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Music.jpg')no-repeat ; 
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: 100% auto;
+    position: relative;
+   min-height: 20vw;
+}
+#dancy{
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Dance-c.jpg')no-repeat ; 
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: 100% auto;
+    position: relative;
+   min-height: 20vw;
+}
+#mute{
+  font-size: 0.8vw;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+#nptitle{
+  font-size: 4vw;
+  text-align: left;
+}
+#infolist{
+  margin-left: 1.5vw;
+  margin-top: 2vw;
+}
+#logtit{
+  margin-top: 20vw;
+}
+#lsbt{
+  margin-top: 2vw;
+}

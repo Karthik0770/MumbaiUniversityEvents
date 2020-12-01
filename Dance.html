@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script> 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+<link rel="stylesheet" href="styles.css">
+	<title>M.U. EVENTS - Sport</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand navbar-dark img-jumbo">
+				<div class="container-fluid">
+				<a href="Index.html" class="navbar-brand text-left" id="Header">M.U. EVENTS</a>
+				<ul class=" navbar-nav align-items-center">
+					
+					<br>
+					<li class="nav-item topnav" id="SearchBar">
+					<input type="text" placeholder="Search..">
+					</li>
+					<li class="nav-item">
+						<a href="#Result" class="nav-link"><button class="btn btn-info">Search</button></a>
+					</li>
+					<li class="nav-item">
+						<a href="#Contact" class="nav-link"><button class="btn btn-danger "><span class="navbar-toggler-icon"></span></button></a>
+					</li>
+					<li class="nav-item">
+						<a href="login.html" class="nav-link"><button class="btn btn-danger " onclick="mainApp.signOut()"><span class="">Sign Out</span></button></a>
+					</li>
+
+				</ul>
+               </div>
+			</nav>
+	<div  class="jumbotron" id= "dancy" >
+        <div  id="container" class="container ">
+            <h1 id="nptitle">DANCE OFF</h1>
+        	  	
+        </div>
+		
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script> 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+<link rel="stylesheet" href="styles.css">
+	<title>M.U. EVENTS</title>
+</head>
+<body>
+           
+			<nav class="navbar navbar-expand navbar-dark img-jumbo">
+				<div class="container-fluid">
+				<a href="Index.html" class="navbar-brand text-left" id="Header">M.U. EVENTS</a>
+				<ul class=" navbar-nav align-items-center">
+					
+					<br>
+					<li class="nav-item topnav" id="SearchBar">
+					<input type="text" placeholder="Search..">
+					</li>
+					<li class="nav-item">
+						<a href="#Result" class="nav-link"><button class="btn btn-danger">Search</button></a>
+					</li>
+					<li class="nav-item">
+						<a href="#Contact" class="nav-link"><button class="btn btn-danger "><span class="navbar-toggler-icon"></span></button></a>
+					</li>
+					<li class="nav-item">
+						<a href="login.html" class="nav-link"><button class="btn btn-danger " onclick="mainApp.signOut()"><span class="">Sign Out</span></button></a>
+					</li>
+
+				</ul>
+               </div>
+			</nav>
+
+			<div class="container align-content-stretch" id="caro">
+				<div class="carousel slide" id="slider" data-ride="carousel">
+
+					<div class="carousel-inner">
+						
+                        <div class="carousel-item active">
+                        	<img id="carim" src="sport.jpg" >
+                        	<div class="carousel-caption">
+                        		<h2 class="text-right">SPORTS</h2>
+                        	</div>
+              
+                        </div>
+
+                        <div class="carousel-item">
+                        	<img id="carim" src="Music.jpg" >
+                        	<div class="carousel-caption">
+                        		<h2 class="text-left">MUSIC</h2>
+                        	</div>
+                        </div>
+
+                        <div class="carousel-item">
+                        	<img id="carim" src="Dance-c.jpg" >
+                        	<div class="carousel-caption">
+                        		<h2 class="text-right">DANCE</h2>
+                        	</div>
+                        </div>
+
+
+					</div>
+					
+					<ul class="carousel-indicators">
+						<li data-target="#slider" data-slide-to="0" class="active"></li>
+						<li data-target="#slider" data-slide-to="1" class=""></li>
+						<li data-target="#slider" data-slide-to="2" class=""></li>
+					</ul>
+
+					<a href="#slider" data-slide="prev" class="carousel-control-prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+
+					<a href="#slider" data-slide="next" class="carousel-control-next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+
+
+				</div>
+			</div>
+
+
+
+
+
+			<div class="container">
+				<h1 id="HomeTitle" class="text-center" >
+					Events to take part in...
+				</h1>
+			</div>
+			<div class="container">
+			  <div class="row">	
+				<div class="card col-sm-6 col-md-6 col-lg-3 col-xl-3 col-12" id="footballCard">
+					<img src="football.jpg" class="card-img" id="card-thumbnail">
+					<div class="card-body">
+						<h5 class="card-header text-center text-muted " id="mute">SPORT</h5>
+						<h4 class="card-title">FOOTBALL ARENA</h4>
+						<p class="card-text"> A sport loved by many , take part in this 3 a side tournament </p>
+						<div class="card-footer">
+						    <a href="Football.html" class="btn btn-outline-primary d-block">EXPLORE</a>
+						    <p class="text-info">Click here to know more</p>
+					    </div>
+					</div>
+				</div>
+				<div class="card col-sm-6 col-md-6 col-lg-3 col-xl-3 col-12" id="CricketCard">
+					<img src="cricket.png" class="card-img" id="card-thumbnail">
+					<div class="card-body">
+						<h5 class="card-header text-center text-muted" id="mute">SPORT</h5>
+						<h4 class="card-title">BOX CRICKET</h4>
+						<p class="card-text"> India's favourite sport , pick up your kit and start playing. </p>
+						<div class="card-footer">
+						    <a href="Cricket.html" class="btn btn-outline-primary d-block">EXPLORE</a>
+						    <p class="text-info">Click here to know more</p>
+					    </div>
+					</div>
+				</div>
+				<div class="card col-sm-6 col-md-6 col-lg-3 col-xl-3 col-12" id="MusicCard">
+					<img src="music.png" class="card-img" id="card-thumbnail">
+					<div class="card-body">
+						<h5 class="card-header text-center text-muted" id="mute">CULTURAL</h5>
+						<h4 class="card-title">MUSICAL MANIA</h4>
+						<p class="card-text"> Music makes us loose control ... you can showcase yor musical talent here. </p>
+						<div class="card-footer">
+						    <a href="Music.html" class="btn btn-outline-primary d-block">EXPLORE</a>
+						    <p class="text-info">Click here to know more</p>
+					    </div>
+					</div>
+				</div>
+				<div class="card col-sm-6 col-md-6 col-lg-3 col-xl-3 col-12" id="DanceCard">
+					<img src="dance.jpg" class="card-img" id="card-thumbnail">
+					<div class="card-body">
+						<h5 class="card-header text-center text-muted" id="mute">CULTURAL</h5>
+						<h4 class="card-title">DANCE OFF</h4>
+						<p class="card-text"> If you are in love with the dance floor , start looking for events to compete and display your dance routines </p>
+						<div class="card-footer">
+						    <a href="Dance.html" class="btn btn-outline-primary d-block">EXPLORE</a>
+						    <p class="text-info">Click here to know more</p>
+					    </div>
+					</div>
+				</div>
+			  </div>	
+			</div>
+			<script src="firebase.js"></script>
+			<script src="Index.js"></script>
+</body>
+</html>
+
